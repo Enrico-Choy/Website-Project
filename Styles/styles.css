@@ -1,0 +1,173 @@
+:root {
+/* CSS HEX */
+--celeste: #bcf4f5ff;
+--magic-mint: #b4ebcaff;
+--tea-green: #d9f2b4ff;
+--tea-green-2: #d3fac7ff;
+--light-pink: #ffb7c3ff;
+--serif: "'Lora', serif"
+}
+
+.main-header {
+    background-color: var(--celeste);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+
+.user-nav a, 
+.main-navigation a,
+.footer-navigation a,
+.social-nav a {
+    color: grey;
+    text-decoration: none;
+    display: inline-block;
+    padding: 1em;
+    font-family: 'Lora', serif;
+}
+
+.main-navigation a:hover,
+.main-footer a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.main-navigation a.current,
+.main-footer a.current {
+    color: black;
+    font-weight: bold;
+}
+
+
+.logo {
+    background-color: var(--celeste);
+    width: 70px;
+    padding: 0.5em;
+    display: block;
+}
+
+.search {
+    padding: .5em;
+    display: flex;
+    flex-direction: row;
+    min-width: 36ch;
+}
+
+.search button {
+    padding: .5em;
+}
+
+.search input {
+    padding: .5em;
+    flex: 1;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Lora', serif;
+    ;
+}
+
+.main-footer {
+    background-color: var(--tea-green-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-nav a {
+    font-size: 1em;
+}
+
+.home-banner {
+    min-height: 30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: grid;
+    place-items: center center;
+    min-width: 100vw;
+}
+
+.home-banner h2 {
+    color: rgb(0, 153, 255);
+    font-size: 2em;
+    font-family: var(--serif);
+    text-shadow: 0px 0px 2px white;
+    padding: 1em;
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+.slide1 {
+    background-image: url("/Images/maksim-larin-1vy2QcZd5FU-unsplash.jpg");
+}
+
+.slide2 {
+    background-image: url("/Images/luis-felipe-lins-J2-wAQDckus-unsplash.jpg")
+}
+
+.slide3 {
+    background-image: url("/Images/usama-akram-kP6knT7tjn4-unsplash.jpg");
+}
+
+/* html {
+    overflow-y: scroll;
+} */
+
+.sr-only {
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    margin: 2em 4em;
+}
+
+.card img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 40em;
+    margin: 3em auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 0.5em;
+}
+
+.contact-form input {
+    line-height: 2em;
+    padding: 0 0.5em;
+}
+
+.buttons-row {
+    display: flex;
+    justify-content: space-between;
+    /* grid-template-columns: 8em auto 8em; */
+}
+
+.main-content h3 {
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5em;
+    text-align: center;
+}
+
